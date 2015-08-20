@@ -61,7 +61,7 @@ The BioDocker containers are listed on this repository. Every software has a esp
 
 In order to run a Docker 9or BioDocker) container on your computer you will nedd the Dcoker daemon installed.
 
-Check [here](https://docs.docker.com/installation/) for the instructions o how to do it.
+Check [here](https://docs.docker.com/installation/) for the instructions on how to do it.
 
 ### 2.4. How do I use a container?
 
