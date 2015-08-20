@@ -113,7 +113,7 @@ visit the [BioDocker](http://biodocker.github.io/) website.
 
 visit the [GitHub](https://github.com/BioDocker/biodocker) page for the source code.
 
-visit the [Specification](https://github.com/BioDocker/specifications) page to make commenst and requests.
+visit the [Specification](https://github.com/BioDocker/specifications) page to make comments and requests.
 
 
 5. License
