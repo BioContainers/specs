@@ -13,7 +13,7 @@ opened using [this form](https://github.com/BioDocker/biodocker/issues/new). Bio
 
 ## How to Contribute
 
-* All changes to the [specifications BioDocker project](https://github.com/BioDocker/bidocker)
+* All changes to the [specifications BioDocker project](https://github.com/BioDocker/biodocker)
   should be made through pull requests to this repository (with just two
   exceptions outlined below).
 
@@ -58,8 +58,8 @@ opened using [this form](https://github.com/BioDocker/biodocker/issues/new). Bio
 
    * A description of how to test the changes.
 
-* The pull request should pass all the continuous integration tests which are
-  automatically run by GitHub using e.g. Travis CI.
+* ~~The pull request should pass all the continuous integration tests which are
+  automatically run by GitHub using e.g. Travis CI.~~
 
 ## Ideas
 
