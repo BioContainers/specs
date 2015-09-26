@@ -55,8 +55,6 @@ Contents
   3.2. [How to create a container?](#32-how-to-create-a-container)  
 * [Support](#4-support)  
   4.1  [Get involved](#41-get-involved)  
-  4.2. [Contact](#42-contact)   
-* [License](#5-license)  
 
 1. Essentials
 --------------
@@ -133,17 +131,3 @@ Here are some general ideas:
 * Browse our list of containers
 * Propose your own ideas or software
 * Interact with other if you think there is something missing.
-
-### 4.2. Contact
-
-visit the [BioDocker](http://biodocker.github.io/) website.
-
-visit the [GitHub](https://github.com/BioDocker/biodocker) page for the source code.
-
-visit the [Specification](https://github.com/BioDocker/specifications) page to make comments and requests.
-
-
-5. License
-----------
-
-[Apache 2](http://www.apache.org/licenses/LICENSE-2.0)
