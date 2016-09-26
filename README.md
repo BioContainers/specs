@@ -1,5 +1,5 @@
-BioDocker
-=========
+BioContainer
+============
 
 [![Join the chat at https://gitter.im/BioDocker/biodocker](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioDocker/biodocker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -19,17 +19,17 @@ Repository of approved bioinformatics containers
 
 Links:
 -------
-Web Page              : http://biodocker.github.io/
+Web Page              : http://biocontainers.co/
 
-Project Definition    : https://github.com/BioDocker/biodocker
+Project Definition    : https://github.com/BioContainers/specs
 
-Contribution Rules    : https://github.com/BioDocker/biodocker/blob/master/CONTRIBUTING.md
+Contribution Rules    : https://github.com/BioContainers/specs/blob/master/CONTRIBUTING.md
 
-Wiki of the project   : https://github.com/BioDocker/biodocker/wiki
+Wiki of the project   : https://github.com/BioContainers/biodocker/wiki
 
-Containers            : https://github.com/BioDocker/containers
+Containers            : https://github.com/BioContainers/containers
 
-Containers Development: https://github.com/BioDocker/sandbox
+Containers Development: https://github.com/BioContainers/sandbox
 
 Email                 : biodockers@gmail.com
 
@@ -42,8 +42,8 @@ Contents
 ----------
 
 1. [Essentials](#1-essentials)  
- 1.1. [Objectives](#11-objectives)    
- 1.2. [What is BioDocker](#12-what-is-biodocker)  
+ 1.1. [What is BioDocker](#12-what-is-biodocker)  
+ 1.2. [Objectives](#11-objectives) 
 * [Containers](#2-containers)  
   2.1. [What is a container?](#21-what-is-a-container)  
   2.2. [How to search for a container](#22-how-to-search-for-a-container)  
@@ -56,21 +56,38 @@ Contents
 * [Support](#4-support)  
   4.1  [Get involved](#41-get-involved)  
 
-1. Essentials
---------------
+## 1. Essentials
+------------------
 
-### 1.1. Objectives
+### 1.1. What is BioContainers?
 
-* Provide bioinformatics software in containers that are ready-to-use
-* Promote software standardization and reproducible results in bioinformatics
+The BioContainers project came from the idea of using the containers-based technologies such as [Docker](https://www.docker.com) or  [rkt](https://github.com/coreos/rkt) for bioinformatics software. Having a common and controllable environment for running software could help to deal with some of the current problems during software development and distribution. BioContainers is a community-driven project that provides the infrastructure and basic guidelines to create, manage and distribute bioinformatics containers with a special focus on omics fields such as proteomics, genomics, trascriptomics and metabolomics. The main containers already implemented in BioContainers (https://github.com/BioContainers/containers) are discussed in details including examples on how to use BioContainers. 
+The currently available BioContainers containers facilitate the usage, and reproducibility of software and algorithms. They can be integrated into more comprehensive bioinformatics pipelines and different architectures (local desktop, Cloud environments or HPC clusters). We also present the  guidelines and specifications on how to create new containers, and how to contribute to the BioContainers project.
 
-### 1.2. What is BioDocker?
+### 1.2. Objectives and Goals
 
-The BioDocker project came from the idea of using the Docker technology for bioinformatics software. Having a common and controllable environment for running software could help to deal with some of the
-current problems during software development and distribution.
+* Provide a base specification and images to easily build and deploy new bioinformatics/proteomics software
+including the source and examples.
 
+* Provide a series of containers ready to be used by the bioinformatics community (https://github.com/BioContainers/containers).
 
-2. Containers
+* Define a set of guidelines and specifications to build a standardized container that can be 
+used in combination with other containers and bioinformatics tools.
+
+* Define a complete infrastructure to develop, deploy and test new bioinformatics containers
+using continuous integration suites such as Travis Continuous Integration (https://travisci.
+org/), Shippable (https://app.shippable.com/) or manually built solutions.
+
+* Provide support and help to the bioinformatics community to deploy new containers for researchers that do not have bioinformatics support.
+
+* Provide guidelines and help on how to create reproducible pipelines by defining, reusing
+and reporting specific container versions which will consistently produce the exact same
+result and always be available in the history of the container.
+
+* Coordinate and integrate developers and bioinformaticians to produce best practice of
+documentation and software development.
+
+## 2. Containers
 -------------
 
 ### 2.1. What is a container?
@@ -78,21 +95,29 @@ current problems during software development and distribution.
 Containers are build from existing operating systems. They are different from Virtual machines because they don't posses an entire guest OS inside, instead, containers are build using optimized system
 libraries and use the host OS memory management and process controls. Containers normally are centralized around a specific software and you can make them executable by instantiating images from them.
 
-## 2.2. How to search for a container
+![What is Container](imgs/container.png)
 
-The BioDocker containers are listed on this repository. Every software has a specific directory with a recipie inside on how to make the container.
+### 2.2. What do I need to use a container?
 
-### 2.3. What do I need to use a container?
+Most of the time when a bionformatic analysis is performed a several bioinformatics tools and software should be installed and configure. This process can take several hours and demand a lot of efforts including the installation of multiple dependencies and tools. BioContainers provides read to use packages and tools that can be easily deployed and used in local machines, HPC and cloud architectures. 
 
-In order to run a Docker (or BioDocker) container on your computer you will need the Docker daemon installed.
+### 2.3. How to use a BioContainer 
 
-Check [here](https://docs.docker.com/installation/) for the instructions on how to do it.
+BioContainers are push and listed in two main registries: 
 
-### 2.4. How do I use a container?
+* [BioDocker Hub](https://hub.docker.com/u/biodckr/): This are Docker based containers that can be user using the docker infrastructure. 
+* [QUAY Hub](https://quay.io/organization/biodckr): This are rkt based containers that can be used rkt infrastructure. 
 
-In general the `README.md` of each project should explain you how to interact with it.
+A full documentation about how to use BioContainers to perform bioinformatics analysis please check the [Full Documentation](http://BioDocker.org/docs) 
 
-### 2.5. How to build a Biodocker container
+### 2.4. BioContainers Architecture 
+
+
+
+3. Developing containers
+-----------------------
+
+### 3.1. How to build a BioContainer's container
 
 There are two different ways to run a container.
 
@@ -101,15 +126,11 @@ There are two different ways to run a container.
 
 Inside the central repository there is a list of softwares with docker recipes, there you can find more information about how to work with them.
 
-
-3. Developing containers
------------------------
-
-### 3.1. What do I need to develop?
+### 3.2. What do I need to develop?
 
 Docker containers are based on Linux systems, so you will need a computer with Linux installed, you also will need the docker daemon and the software you want to containerize.
 
-### 3.2. How to create a container?
+### 3.3. How to create a Docker based container?
 
 Having all in hands now you need to create a Dockerfile. Dockerfiles are simple recipes to instruct the daemon on how to set an appropriate OS and how to download, manage, install and
 give access to the software inside.
