@@ -1,16 +1,16 @@
-BioContainer
-============
+BioContainers
+=============
 
 [![Join the chat at https://gitter.im/BioDocker/biodocker](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioDocker/biodocker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ```
-___.   .__           .___             __                 
-\_ |__ |__| ____   __| _/____   ____ |  | __ ___________
- | __ \|  |/  _ \ / __ |/  _ \_/ ___\|  |/ // __ \_  __ \
- | \_\ \  (  <_> ) /_/ (  <_> )  \___|    <\  ___/|  | \/
- |___  /__|\____/\____ |\____/ \___  >__|_ \\___  >__|   
-     \/               \/           \/     \/    \/       
-
+ ______  _                                  _                       
+ (____  \(_)                       _        (_)                      
+  ____)  )_  ___   ____ ___  ____ | |_  ____ _ ____   ____  ____ ___ 
+ |  __  (| |/ _ \ / ___) _ \|  _ \|  _)/ _  | |  _ \ / _  )/ ___)___)
+ | |__)  ) | |_| ( (__| |_| | | | | |_( ( | | | | | ( (/ /| |  |___ |
+ |______/|_|\___/ \____)___/|_| |_|\___)_||_|_|_| |_|\____)_|  (___/ 
+ 
  ```
 
 Containers
@@ -42,7 +42,7 @@ Contents
 ----------
 
 1. [Essentials](#1-essentials)  
- 1.1. [What is BioDocker](#12-what-is-biodocker)  
+ 1.1. [What is BioContainers](#12-what-is-biodocker)  
  1.2. [Objectives](#11-objectives) 
 * [Containers](#2-containers)  
   2.1. [What is a container?](#21-what-is-a-container)  
@@ -112,6 +112,20 @@ A full documentation about how to use BioContainers to perform bioinformatics an
 
 ### 2.4. BioContainers Architecture 
 
+BioContainers is a community-driven project that allows bioinformatics to request, build and deploy bioinformatics tools using containers. The following figure present the 
+general BioContainers workflow: 
+
+![What is Container](imgs/workflow.png)
+
+The next sections explain in details the presented workflow: 
+ 
+ * (i) How to request a workflow 
+
+#### 2.4.1 How to Request a Container
+ 
+Users can request a container by opening an issue in the [sandbox repository] (http://github.com/BioContainers/sandbox/issues). The issue 
+should contains the name of the software, the url of the code or binary to be package and information about the software [see BioContainers specification](http://github.com/BioContainers/container-specs.md). When the containers 
+is deploy and fully functional, the issue will be close by the developer or the contributor to BioContainers.
 
 
 3. Developing containers
