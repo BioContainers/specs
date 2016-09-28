@@ -2,21 +2,11 @@
 <img src="imgs/BioContainers.png" style="max-width: 50px;"/>
 
 
-The latest information about BioContainers is available via [https://BioConteiners.pro](https://galaxyproject.org/) 
-
+The latest information about BioContainers is available via [https://BioConteiners.pro](https://Biocontainers.pro/) 
 
 
 [![Join the chat at https://gitter.im/BioDocker/biodocker](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioDocker/biodocker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-```
- ______  _                                  _                       
- (____  \(_)                       _        (_)                      
-  ____)  )_  ___   ____ ___  ____ | |_  ____ _ ____   ____  ____ ___ 
- |  __  (| |/ _ \ / ___) _ \|  _ \|  _)/ _  | |  _ \ / _  )/ ___)___)
- | |__)  ) | |_| ( (__| |_| | | | | |_( ( | | | | | ( (/ /| |  |___ |
- |______/|_|\___/ \____)___/|_| |_|\___)_||_|_|_| |_|\____)_|  (___/ 
- 
- ```
 
 Containers
 --------
