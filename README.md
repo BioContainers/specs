@@ -119,13 +119,21 @@ general BioContainers workflow:
 
 The next sections explain in details the presented workflow: 
  
- * (i) How to request a workflow 
+ * (i) How to request a workflow
+ * (ii) Use a BioContainer
+ * (iii) Developing containers 
+ 
 
 #### 2.4.1 How to Request a Container
  
-Users can request a container by opening an issue in the [sandbox repository] (http://github.com/BioContainers/sandbox/issues). The issue 
+Users can request a container by opening an issue in the [sandbox repository] (http://github.com/BioContainers/sandbox/issues) `(In the previous workflow this is the first step performed by user henrik)`. The issue 
 should contains the name of the software, the url of the code or binary to be package and information about the software [see BioContainers specification](http://github.com/BioContainers/container-specs.md). When the containers 
-is deploy and fully functional, the issue will be close by the developer or the contributor to BioContainers.
+is deploy and fully functional, the issue will be close by the developer or the contributor to BioContainers. 
+  
+#### 2.4.2 Use a BioContainer. 
+
+When a container is deploy and the developer close the issue in GitHub the user `(henrik)` received a notification that the container is ready.
+The user can then used [docker](http://www.docker.com) or [rkt](https://coreos.com/rkt/docs/latest/) to pull or fetch the corresponding container. 
 
 
 3. Developing containers
@@ -142,7 +150,7 @@ Inside the central repository there is a list of softwares with docker recipes, 
 
 ### 3.2. What do I need to develop?
 
-Docker containers are based on Linux systems, so you will need a computer with Linux installed, you also will need the docker daemon and the software you want to containerize.
+BioContainers are based on Linux systems, so you will need a computer with Linux installed, you also will need the docker or rkt daemon and the software you want to containerize.
 
 ### 3.3. How to create a Docker based container?
 
