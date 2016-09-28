@@ -1,7 +1,8 @@
 Container Specifications
 ========================
 
-Each container should provide a well-defined metadata that allows the final users to test, deploy and get support around the container. We explain here the containers metadata, their meaning and use in BioContainers: 
+Each container should provide a well-defined metadata that allows the final users to test, deploy and get support around the container. 
+We explain here the containers metadata, their meaning and use in BioContainers: 
  
 
 
@@ -15,3 +16,4 @@ Each container should provide a well-defined metadata that allows the final user
 | base image            | The original image where the software has been built                                                                       | base image: biodckr/biodocker                            |
 | run cmd               | Example on how to execute the given container                                                                              | run cmd: docker run biodckr/comet <options> <files>      | 
 | maintainer            | The information about the maintainer of the software and the tool                                                          | maintainer: Yasset Pere-Riverol <yperez@ebi.ac.uk>       |
+| help page             | This property and attribute contains provides help page information about the tool                                         | help pages: http://comet-ms.sourceforge.net/             |   

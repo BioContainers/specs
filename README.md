@@ -19,13 +19,13 @@ Repository of approved bioinformatics containers
 
 Links:
 -------
-Web Page              : http://biocontainers.co/
+Web Page              : http://biocontainers.pro/
 
 Project Definition    : https://github.com/BioContainers/specs
 
 Contribution Rules    : https://github.com/BioContainers/specs/blob/master/CONTRIBUTING.md
 
-Wiki of the project   : https://github.com/BioContainers/biodocker/wiki
+Wiki of the project   : https://github.com/BioContainers/specs/wiki
 
 Containers            : https://github.com/BioContainers/containers
 
@@ -41,15 +41,16 @@ License
 Contents
 ----------
 
-1. [Essentials](#1-essentials)  
- 1.1. [What is BioContainers](#12-what-is-biodocker)  
- 1.2. [Objectives](#11-objectives) 
+1. [Essentials](#essentials)  
+ 1.1. [What is BioContainers](#11-what-is-biodocker)  
+ 1.2. [Objectives](#12-objectives-and-goals) 
 * [Containers](#2-containers)  
   2.1. [What is a container?](#21-what-is-a-container)  
-  2.2. [How to search for a container](#22-how-to-search-for-a-container)  
-  2.3. [What do I need to use a container?](#23-what-do-i-need-to-use-a-container)   
-  2.4. [How do I use a container?](#24-how-do-i-use-a-container)  
-  2.5. [How to build a BioDocker container](#25-how-to-build-a-biodocker-container)  
+  2.2. [Why do I need to use a container](#22-what-do-i-need-to-use-a-container)  
+  2.3. [How to use a BioContainer](#23-how-to-use-a-biocontainer)   
+  2.4. [BioContainers Architecture](#24-biocontainers-architecture)  
+  2.4.1 [How to Request a Container](#241-how-to-request-a-container)  
+  2.4.2 [Use a Container](#242-use-a-bioContainer.)      
 * [Developing containers](#3-developing-containers)  
   3.1. [What do I need to develop?](#31-what-do-i-need-to-develop)  
   3.2. [How to create a container?](#32-how-to-create-a-container)  
@@ -99,7 +100,7 @@ libraries and use the host OS memory management and process controls. Containers
 
 ### 2.2. What do I need to use a container?
 
-Most of the time when a bionformatic analysis is performed a several bioinformatics tools and software should be installed and configure. This process can take several hours and demand a lot of efforts including the installation of multiple dependencies and tools. BioContainers provides read to use packages and tools that can be easily deployed and used in local machines, HPC and cloud architectures. 
+Most of the time when a bioinformatics analysis is performed a several bioinformatics tools and software should be installed and configure. This process can take several hours and demand a lot of efforts including the installation of multiple dependencies and tools. BioContainers provides read to use packages and tools that can be easily deployed and used in local machines, HPC and cloud architectures. 
 
 ### 2.3. How to use a BioContainer 
 
@@ -150,14 +151,23 @@ Inside the central repository there is a list of softwares with docker recipes, 
 
 ### 3.2. What do I need to develop?
 
-BioContainers are based on Linux systems, so you will need a computer with Linux installed, you also will need the docker or rkt daemon and the software you want to containerize.
+BioContainers are based on Linux systems, so you will need a computer with Linux installed, you also will need the `docker` or `rkt` daemon and the software you want to containerize.
 
-### 3.3. How to create a Docker based container?
+### 3.3. How to create a Docker based Biocontainer?
 
 Having all in hands now you need to create a Dockerfile. Dockerfiles are simple recipes to instruct the daemon on how to set an appropriate OS and how to download, manage, install and
 give access to the software inside.
 
 You can check the [Docker](https://docs.docker.com/reference/builder/) documentation for more information.
+
+Once the container is ready you can get in touch with us so we can make the appropriate arrangements to make your container available to everyone in the community by giving an automated build system.
+
+### 3.3. How to create a rkt based Biocontainer?
+
+Having all in hands now you need to create a rkt. rkt containers are simple recipes to instruct the daemon on how to set an appropriate OS and how to download, manage, install and
+give access to the software inside.
+
+You can check the [rkt](https://github.com/coreos/rkt/blob/master/Documentation/getting-started-guide.md) documentation for more information.
 
 Once the container is ready you can get in touch with us so we can make the appropriate arrangements to make your container available to everyone in the community by giving an automated build system.
 
