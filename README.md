@@ -1,10 +1,10 @@
 
-<div>
-  <img style="width:30px; height:30px;" src="imgs/biocontainers-logo.png">
-  <span style="line-height:30px;">BioContainers</span>
-</div>
- 
-======================================================================
+<img src="imgs/BioContainers.png" style="max-width: 50px;"/>
+
+
+The latest information about BioContainers is available via [https://BioConteiners.pro](https://galaxyproject.org/) 
+
+
 
 [![Join the chat at https://gitter.im/BioDocker/biodocker](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioDocker/biodocker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
