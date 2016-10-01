@@ -37,7 +37,7 @@ Contents
 ----------
 
 1. [Essentials](#essentials)  
- 1.1. [What is BioContainers](#11-what-is-biodocker)  
+ 1.1. [What is BioContainers](#11-what-is-biocontainers)  
  1.2. [Objectives](#12-objectives-and-goals) 
 * [Containers](#2-containers)  
   2.1. [What is a container?](#21-what-is-a-container)  
@@ -95,14 +95,14 @@ libraries and use the host OS memory management and process controls. Containers
 
 ### 2.2. What do I need to use a container?
 
-Most of the time when a bioinformatics analysis is performed a several bioinformatics tools and software should be installed and configure. This process can take several hours and demand a lot of efforts including the installation of multiple dependencies and tools. BioContainers provides read to use packages and tools that can be easily deployed and used in local machines, HPC and cloud architectures. 
+Most of the time when a bioinformatics analysis is performed, several bioinformatics tools and software should be installed and configure. This process can take several hours and demand a lot of efforts including the installation of multiple dependencies and tools. BioContainers provides ready to use packages and tools that can be easily deployed and used in local machines, HPC and cloud architectures. 
 
 ### 2.3. How to use a BioContainer 
 
-BioContainers are push and listed in two main registries: 
+BioContainers are listed in two main registries: 
 
-* [BioDocker Hub](https://hub.docker.com/u/biodckr/): This are Docker based containers that can be user using the docker infrastructure. 
-* [QUAY Hub](https://quay.io/organization/biodckr): This are rkt based containers that can be used rkt infrastructure. 
+* [Docker Hub](https://hub.docker.com/u/biodckr/):  Docker based containers that can be user using the docker infrastructure. 
+* [QUAY Hub](https://quay.io/organization/biodckr): Docker and rkt based containers that can be used rkt infrastructure. 
 
 A full documentation about how to use BioContainers to perform bioinformatics analysis please check the [Full Documentation](http://BioDocker.org/docs) 
 
@@ -135,9 +135,9 @@ The user can then used [docker](http://www.docker.com) or [rkt](https://coreos.c
 3. Developing containers
 -----------------------
 
-### 3.1. How to build a BioContainer's container
+### 3.1. How to build BioContainer's
 
-There are two different ways to run a container.
+There are two different ways to build a container.
 
 * Go to the GitHub repository with the recipe of the software you want, clone it, and build it yourself on your machine.
 * Use the docker daemon to search for a ready-to-use version of the containerized software you want.

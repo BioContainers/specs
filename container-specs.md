@@ -16,4 +16,10 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 | base image            | The original image where the software has been built                                                                       | base image: biodckr/biodocker                            |
 | run cmd               | Example on how to execute the given container                                                                              | run cmd: docker run biodckr/comet <options> <files>      | 
 | maintainer            | The information about the maintainer of the software and the tool                                                          | maintainer: Yasset Pere-Riverol <yperez@ebi.ac.uk>       |
-| help page             | This property and attribute contains provides help page information about the tool                                         | help pages: http://comet-ms.sourceforge.net/             |   
+| help page             | This property and attribute contains provides help page information about the tool                                         | help pages: http://comet-ms.sourceforge.net/             | 
+  
+  
+### DockerFile container example: 
+
+
+
