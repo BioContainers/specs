@@ -57,7 +57,7 @@ Contents
 
 ### 1.1. What is BioContainers?
 
-The BioContainers project came from the idea of using the containers-based technologies such as [Docker](https://www.docker.com) or  [rkt](https://github.com/coreos/rkt) for bioinformatics software. Having a common and controllable environment for running software could help to deal with some of the current problems during software development and distribution. BioContainers is a community-driven project that provides the infrastructure and basic guidelines to create, manage and distribute bioinformatics containers with a special focus on omics fields such as proteomics, genomics, trascriptomics and metabolomics. The main containers already implemented in BioContainers (https://github.com/BioContainers/containers) are discussed in details including examples on how to use BioContainers. 
+The BioContainers project came from the idea of using the containers-based technologies such as [Docker](https://www.docker.com) or  [rkt](https://github.com/coreos/rkt) for bioinformatics software. Having a common and controllable environment for running software could help to deal with some of the current problems during software development and distribution. BioContainers is a community-driven project that provides the infrastructure and basic guidelines to create, manage and distribute bioinformatics containers with a special focus on omics fields such as proteomics, genomics, transcriptomics and metabolomics. The main containers already implemented in BioContainers (https://github.com/BioContainers/containers) are discussed in details including examples on how to use BioContainers. 
 The currently available BioContainers containers facilitate the usage, and reproducibility of software and algorithms. They can be integrated into more comprehensive bioinformatics pipelines and different architectures (local desktop, Cloud environments or HPC clusters). We also present the  guidelines and specifications on how to create new containers, and how to contribute to the BioContainers project.
 
 ### 1.2. Objectives and Goals
@@ -179,3 +179,4 @@ Here are some general ideas:
 * Browse our list of containers
 * Propose your own ideas or software
 * Interact with other if you think there is something missing.
+
