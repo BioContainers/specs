@@ -43,7 +43,7 @@ opened using [this form](https://github.com/BioContainers/BioContainers/issues/n
 
 * If your changes modify containers/images - please ensure the resulting files
   conform to BioContainers Specifications [BioContainers
-  Specifications](https://github.com/BioContainers/BioContainers).
+  Specifications](http://biocontainers.pro/docs/developer-manual/biocotainers-dockerfile/).
 
 * Commit and push your changes to your
   [fork](https://help.github.com/articles/pushing-to-a-remote/).
