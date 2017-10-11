@@ -20,8 +20,6 @@ Project Definition    : https://github.com/BioContainers/specs
 
 Contribution Rules    : https://github.com/BioContainers/specs/blob/master/CONTRIBUTING.md
 
-Wiki of the project   : https://github.com/BioContainers/specs/wiki
-
 Containers            : https://github.com/BioContainers/containers
 
 Containers Development: https://github.com/BioContainers/sandbox
