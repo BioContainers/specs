@@ -37,7 +37,7 @@ opened using [this form](https://github.com/BioContainers/BioContainers/issues/n
 
   * Serious security problems should not be fixed via pull request - please
     responsibly disclose these by e-mailing them (with or without patches) to
-    biodcokers@gmail.com . The BioContainers core development team will solve
+    biodockers@gmail.com . The BioContainers core development team will solve
     those issues and we will provide you credit for the discovery when publicly
     disclosing the issue.
 
