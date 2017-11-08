@@ -37,12 +37,13 @@ opened using [this form](https://github.com/BioContainers/BioContainers/issues/n
 
   * Serious security problems should not be fixed via pull request - please
     responsibly disclose these by e-mailing them (with or without patches) to
-    biodcokers@gmail.com . The BioContainers core development team will solve those isssues and We will provide you
-    credit for the discovery when publicly disclosing the issue.
+    biodockers@gmail.com . The BioContainers core development team will solve
+    those issues and we will provide you credit for the discovery when publicly
+    disclosing the issue.
 
 * If your changes modify containers/images - please ensure the resulting files
   conform to BioContainers Specifications [BioContainers
-  Specifications](https://github.com/BioContainers/BioContainers).
+  Specifications](http://biocontainers.pro/docs/developer-manual/biocotainers-dockerfile/).
 
 * Commit and push your changes to your
   [fork](https://help.github.com/articles/pushing-to-a-remote/).

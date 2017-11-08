@@ -5,7 +5,7 @@
 The latest information about BioContainers is available via [https://BioContainers.pro](https://Biocontainers.pro/) 
 
 
-[![Join the chat at https://gitter.im/BioDocker/biodocker](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioDocker/biodocker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/BioContainers/biocontainers](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/biocontainers/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 Containers
@@ -19,8 +19,6 @@ Web Page              : http://biocontainers.pro/
 Project Definition    : https://github.com/BioContainers/specs
 
 Contribution Rules    : https://github.com/BioContainers/specs/blob/master/CONTRIBUTING.md
-
-Wiki of the project   : https://github.com/BioContainers/specs/wiki
 
 Containers            : https://github.com/BioContainers/containers
 
@@ -57,7 +55,7 @@ Contents
 
 ### 1.1. What is BioContainers?
 
-The BioContainers project came from the idea of using the containers-based technologies such as [Docker](https://www.docker.com) or  [rkt](https://github.com/coreos/rkt) for bioinformatics software. Having a common and controllable environment for running software could help to deal with some of the current problems during software development and distribution. BioContainers is a community-driven project that provides the infrastructure and basic guidelines to create, manage and distribute bioinformatics containers with a special focus on omics fields such as proteomics, genomics, trascriptomics and metabolomics. The main containers already implemented in BioContainers (https://github.com/BioContainers/containers) are discussed in details including examples on how to use BioContainers. 
+The BioContainers project came from the idea of using the containers-based technologies such as [Docker](https://www.docker.com) or  [rkt](https://github.com/coreos/rkt) for bioinformatics software. Having a common and controllable environment for running software could help to deal with some of the current problems during software development and distribution. BioContainers is a community-driven project that provides the infrastructure and basic guidelines to create, manage and distribute bioinformatics containers with a special focus on omics fields such as proteomics, genomics, transcriptomics and metabolomics. The main containers already implemented in BioContainers (https://github.com/BioContainers/containers) are discussed in details including examples on how to use BioContainers. 
 The currently available BioContainers containers facilitate the usage, and reproducibility of software and algorithms. They can be integrated into more comprehensive bioinformatics pipelines and different architectures (local desktop, Cloud environments or HPC clusters). We also present the  guidelines and specifications on how to create new containers, and how to contribute to the BioContainers project.
 
 ### 1.2. Objectives and Goals
@@ -123,7 +121,7 @@ The next sections explain in details the presented workflow:
 #### 2.4.1 How to Request a Container
  
 Users can request a container by opening an issue in the [sandbox repository] (http://github.com/BioContainers/sandbox/issues) `(In the previous workflow this is the first step performed by user henrik)`. The issue 
-should contains the name of the software, the url of the code or binary to be package and information about the software [see BioContainers specification](http://github.com/BioContainers/container-specs.md). When the containers 
+should contains the name of the software, the url of the code or binary to be package and information about the software [see BioContainers specification](https://github.com/BioContainers/specs/blob/master/container-specs.md). When the containers 
 is deploy and fully functional, the issue will be close by the developer or the contributor to BioContainers. 
   
 #### 2.4.2 Use a BioContainer. 
@@ -179,3 +177,4 @@ Here are some general ideas:
 * Browse our list of containers
 * Propose your own ideas or software
 * Interact with other if you think there is something missing.
+
