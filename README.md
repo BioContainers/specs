@@ -99,8 +99,8 @@ Most of the time when a bioinformatics analysis is performed, several bioinforma
 
 BioContainers are listed in two main registries: 
 
-* [Docker Hub](https://hub.docker.com/u/biodckr/):  Docker based containers that can be user using the docker infrastructure. 
-* [QUAY Hub](https://quay.io/organization/biodckr): Docker and rkt based containers that can be used rkt infrastructure. 
+* [Docker Hub](https://hub.docker.com/u/biocontainers/):  Docker based containers that can be user using the docker infrastructure. 
+* [QUAY Hub](https://quay.io/organization/biocontainers): Docker and rkt based containers that can be used rkt infrastructure. 
 
 A full documentation about how to use BioContainers to perform bioinformatics analysis please check the [Full Documentation](http://BioDocker.org/docs) 
 
@@ -109,7 +109,7 @@ A full documentation about how to use BioContainers to perform bioinformatics an
 BioContainers is a community-driven project that allows bioinformatics to request, build and deploy bioinformatics tools using containers. The following figure present the 
 general BioContainers workflow: 
 
-![What is Container](imgs/workflow.png)
+![What is Container](imgs/workflow.svg)
 
 The next sections explain in details the presented workflow: 
  
