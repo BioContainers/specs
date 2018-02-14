@@ -14,7 +14,8 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 | description           | A short description of the software or tool.                                                                               | description: Peptide identification search tool          |
 | website               | The original software website where the user can find information about the tool the algorithms and examples.              | website: http://comet-ms.sourceforge.net/                |
 | documentation         | URL(s) containing information about how to use the software.                                                               | doc pages: http://comet-ms.sourceforge.net/              |
-| license               | SPDX license specification. If not in the SPDX list, then can be a URL>                                                                                   | SPDX:Apache-2.0          |  
+| license               | SPDX license specification. If not in the SPDX list, then set short description and specify URL in license_file>                                                                                   | SPDX:Apache-2.0          |
+| license_file          | license path location in the container or url (according to license requirements |          |  
 | tags                  | Tags about the software that enable to find and classify the software tool.                                                | tags: proteomics, mass spectrometry, biocontainers       |
 
 
@@ -33,6 +34,7 @@ LABEL description="an open source tandem mass spectrometry sequence database sea
 LABEL website="http://comet-ms.sourceforge.net/"
 LABEL documentation="http://comet-ms.sourceforge.net/parameters/parameters_2016010/"
 LABEL license="SPDX:Apache-2.0"
+LABEL license_file="/usr/share/common-licenses/Apache-2.0"
 LABEL tags="Proteomics"
 
 # Maintainer
