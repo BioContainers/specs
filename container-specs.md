@@ -8,13 +8,13 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 
 | Field                 | Description                                                                                                                | Example                                                  |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| base-image            | The original image where the software has been built                                                                       | base image: biodckr/biodocker                            |
-| software-version      | Every BioContainer should contain the actual version of the software and tool                                               | software version: 2015020                                |
-| software              | Name of the software                                                                                                       | software: Comet                                          |
-| description           | A short description of the software or tool.                                                                               | description: Peptide identification search tool          |
+| base_image            | The original image where the software has been built                                                                         | base image: biodckr/biodocker                            |
+| software_version      | Every BioContainer should contain the actual version of the software and tool                                               | software version: 2015020                                |
+| software              | Name of the software                                                                                                         | software: Comet                                          |
+| description           | A short description of the software or tool.                                                                                 | description: Peptide identification search tool          |
 | home                  | The original software website where the user can find information about the tool the algorithms and examples.               | website: http://comet-ms.sourceforge.net/                |
-| documentation         | URL(s) containing information about how to use the software.                                                               | doc pages: http://comet-ms.sourceforge.net/              |
-| license               | SPDX license specification. If not in the SPDX list, then set short description and specify URL in license_file>                                                                                   | SPDX:Apache-2.0          |
+| documentation         | URL(s) containing information about how to use the software.                                                                 | doc pages: http://comet-ms.sourceforge.net/              |
+| license               | SPDX license specification. If not in the SPDX list, then set short description and specify URL in license_file>           | SPDX:Apache-2.0          |
 | license-file          | license path location in the container or url (according to license requirements |          |  
 | tags                  | Tags about the software that enable to find and classify the software tool.                                                 | tags: proteomics, mass spectrometry, biocontainers       |
 
@@ -26,15 +26,15 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 FROM biocontainers/biocontainers:latest
 
 # Metadata
-LABEL base-image="biocontainers:latest"
+LABEL base_image="biocontainers:latest"
 LABEL version="3"
 LABEL software="Comet"
-LABEL software-version="2016012"
+LABEL software_version="2016012"
 LABEL description="an open source tandem mass spectrometry sequence database search tool"
 LABEL home="http://comet-ms.sourceforge.net/"
 LABEL documentation="http://comet-ms.sourceforge.net/parameters/parameters_2016010/"
 LABEL license="SPDX:Apache-2.0"
-LABEL license-file="/usr/share/common-licenses/Apache-2.0"
+LABEL license_file="/usr/share/common-licenses/Apache-2.0"
 LABEL tags="Proteomics"
 
 # Maintainer
