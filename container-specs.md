@@ -13,7 +13,7 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 | software              | Name of the software                                 | software: Comet               |
 | about.summary         | A short description of the software or tool.         | about.summary: Peptide identification|
 | about.home            | The original software website where  and examples.   | about.home: http://comet-ms.sourceforge.net/  |
-| about.documentation   | URL(s) containing information about software            | aobut.documentation: http://comet-ms.sourceforge.net/     |
+| about.documentation   | URL(s) containing information about software            | about.documentation: http://comet-ms.sourceforge.net/     |
 | about.license         | SPDX license specification. If not in the SPDX list, then set short description and specify URL in license_file>           | about.license: SPDX:Apache-2.0          |
 | about.license_file    | license path location in the container or url (according to license requirements |          |  
 | about.tags            | Tags about the software that enable to find and classify the software tool.| about.tags: proteomics, mass spectrometry, biocontainers       |
@@ -54,5 +54,4 @@ ENV PATH /home/biodocker/bin/Comet:$PATH
 
 WORKDIR /data/
 
-CMD ["comet"]
 ~~~
