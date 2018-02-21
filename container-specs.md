@@ -6,17 +6,18 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 
 
 
-| Field                 | Description                                                                                                                | Example                                                  |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| base_image            | The original image where the software has been built | base_image: biodckr/biodocker |
-| software.version      | Version of the software and tool                     | software.version: 2015020     |
-| software              | Name of the software                                 | software: Comet               |
-| about.summary         | A short description of the software or tool.         | about.summary: Peptide identification|
-| about.home            | The original software website where  and examples.   | about.home: http://comet-ms.sourceforge.net/  |
-| about.documentation   | URL(s) containing information about software            | about.documentation: http://comet-ms.sourceforge.net/     |
-| about.license         | SPDX license specification. If not in the SPDX list, then set short description and specify URL in license_file>           | about.license: SPDX:Apache-2.0          |
-| about.license_file    | license path location in the container or url (according to license requirements |          |  
-| about.tags            | Tags about the software that enable to find and classify the software tool.| about.tags: proteomics, mass spectrometry, biocontainers       |
+| Field          | Description | Optional                                             | Example   |
+|----------------|------------ |------------------------------------------------------|-----------|
+| base_image            | The original image where the software has been built | **Mandatory** | base_image: biodckr/biodocker |
+| software.version      | Version of the software and tool                     | **Mandatory** | software.version: 2015020     |
+| software              | Name of the software                                 | **Mandatory** | software: Comet               |
+| about.summary         | A short description of the software or tool.         | **Mandatory** | about.summary: Peptide identification|
+| about.home            | The original software website where  and examples.   | **Mandatory** | about.home: http://comet-ms.sourceforge.net/  |
+| about.documentation   | URL(s) containing information about software         | _Optional_  | about.documentation: http://comet-ms.sourceforge.net/     |
+| about.license         | SPDX license specification. If not in the SPDX listspecify URL in license_file> | **Mandatory** | about.license: SPDX:Apache-2.0          |
+| about.license_file    | license path location in the container or url (according to license requirements | _Optional_ |         |  
+| about.tags            | Tags about the software that enable to find and classify the software tool.| _Optional_ | about.tags: proteomics, mass spectrometry, biocontainers       |
+| MANTAINER | The developer in charge of the container/software | **Mandatory** | MAINTAINER Yasset Perez-Riverol <yperez@ebi.ac.uk> | 
 
 
 ### Dockerfile example:
