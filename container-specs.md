@@ -17,7 +17,8 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 | about.license         | SPDX license specification. If not in the SPDX listspecify URL in license_file> | **Mandatory** | about.license: SPDX:Apache-2.0          |
 | about.license_file    | license path location in the container or url (according to license requirements | _Optional_ |         |  
 | about.tags            | Tags about the software that enable to find and classify the software tool.| _Optional_ | about.tags: proteomics, mass spectrometry, biocontainers       |
-| MANTAINER | The developer in charge of the container/software | **Mandatory** | MAINTAINER Yasset Perez-Riverol <yperez@ebi.ac.uk> | 
+| MANTAINER | The developer in charge of the container/software | **Mandatory** | MAINTAINER Yasset Perez-Riverol <yperez@ebi.ac.uk> |
+|extra.identifier  | Extra identifiers are external idnetifers in other resources that will allow to pul metadata, an external information from other resources (e.g biotoolS). In order to be compatible with Docker specification the domain (database) of the identifiers should be specify in the name of the label. | _Optional_ | extra.identifier.biotools=abyss |  
 
 
 ### Dockerfile example:
@@ -37,6 +38,7 @@ LABEL about.documentation="http://comet-ms.sourceforge.net/parameters/parameters
 LABEL about.license="SPDX:Apache-2.0"
 LABEL about.license_file="/usr/share/common-licenses/Apache-2.0"
 LABEL about.tags="Proteomics"
+LABEL extra.identifiers.biotools=comet
 
 # Maintainer
 MAINTAINER Felipe da Veiga Leprevost <felipe@leprevost.com.br>
