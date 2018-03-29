@@ -21,9 +21,9 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 |extra.identifier  | Extra identifiers are external idnetifers in other resources that will allow to pul metadata, an external information from other resources (e.g biotoolS). In order to be compatible with Docker specification the domain (database) of the identifiers should be specify in the name of the label. | _Optional_ | extra.identifier.biotools=abyss |  
 
 
-### Dockerfile example:
+### Dockerfile example (Single lines LABEL):
 
-~~~
+```Dockerfile
 # Base Image
 FROM biocontainers/biocontainers:latest
 
@@ -57,4 +57,44 @@ ENV PATH /home/biodocker/bin/Comet:$PATH
 
 WORKDIR /data/
 
-~~~
+```
+
+
+### Dockerfile example (Multiple lines LABEL):
+
+```Dockerfile
+
+# Base Image
+FROM biocontainers/biocontainers:latest
+
+# Metadata
+LABEL base_image="biocontainers:latest" \
+      version="3"   \
+      software="Comet" \
+      software.version="2016012" \
+      about.summary="an open source tandem mass spectrometry sequence database search tool" \
+      about.home="http://comet-ms.sourceforge.net/" \
+      about.documentation="http://comet-ms.sourceforge.net/parameters/parameters_2016010/" \
+      about.license="SPDX:Apache-2.0" \
+      about.license_file="/usr/share/common-licenses/Apache-2.0" \
+      about.tags="Proteomics" \
+      extra.identifiers.biotools=comet
+
+# Maintainer
+MAINTAINER Felipe da Veiga Leprevost <felipe@leprevost.com.br>
+
+USER biodocker
+
+RUN ZIP=comet_binaries_2016012.zip && \
+  wget https://github.com/BioDocker/software-archive/releases/download/Comet/$ZIP -O /tmp/$ZIP && \
+  unzip /tmp/$ZIP -d /home/biodocker/bin/Comet/ && \
+  chmod -R 755 /home/biodocker/bin/Comet/* && \
+  rm /tmp/$ZIP
+
+RUN mv /home/biodocker/bin/Comet/comet_binaries_2016012/comet.2016012.linux.exe /home/biodocker/bin/Comet/comet
+
+ENV PATH /home/biodocker/bin/Comet:$PATH
+
+WORKDIR /data/
+
+```
