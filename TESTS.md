@@ -11,7 +11,7 @@ Test command should be written in a file called **test-cmds.txt**. This file mus
 
 Each line of the test file contains a single command whose correct execution will be tested. This means a _docker run_ command will be executed and its exit status tested for each (non empty) line in the test file.
 
-The _docker run_ command looks like this:
+The _docker run_ command executed for each line looks like this:
 
 > docker run -v [TESTDIRMOUNT](#23-extra-test-data) \[--entrypoint=[ENTRYPOINT](#21-entrypoint)\] image_name [ARGS](#22-other-arguments)
 
@@ -34,7 +34,7 @@ For example if your Dockerfile directory looks like this:
  * Dockerfile
  * test-cmds.txt
  * mytestdata
-  * mySeq.fa
+   * mySeq.fa
 
 Then you can access the fasta file using this path: _/biocontainers/mytestdata/mySeq.fa_
 
