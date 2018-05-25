@@ -33,10 +33,10 @@ For example if your Dockerfile directory looks like this:
 **.**
  * Dockerfile
  * test-cmds.txt
- * mytestdata
+ * mytestdata/
    * mySeq.fa
 
-Then you can access the fasta file using this path: _/biocontainers/mytestdata/mySeq.fa_
+Then you can access the fasta file from inside the container (and the test command line) using this path: _/biocontainers/mytestdata/mySeq.fa_
 
 ## 3. Outcomes
 
