@@ -13,7 +13,7 @@ Each line of the test file contains a single command whose correct execution wil
 
 The _docker run_ command looks like this:
 
-> docker run -v [TESTDIRMOUNT](#extra-test-data) \[--entrypoint=[ENTRYPOINT](#entrypoint)\] image_name [ARGS](#other-arguments)
+> docker run -v [TESTDIRMOUNT](#23-extra-test-data) \[--entrypoint=[ENTRYPOINT](#21-entrypoint)\] image_name [ARGS](#22-other-arguments)
 
 ### 2.1. Entrypoint
 
@@ -30,7 +30,7 @@ Those test data can be stored in the same directory as the Dockerfile. This same
 
 For example if your Dockerfile directory looks like this:
 
-.
+**.**
  * Dockerfile
  * test-cmds.txt
  * mytestdata
