@@ -63,9 +63,9 @@ The most common tests you'll want to run are to check if the tool is correctly i
 Below is an example _test-cmds.txt_ file that could be used with Blast.
 
 **test-cmds.txt**
- > --version 
- > makeblastdb -in /biocontainers/fastafiles/in.fa –dbtype nucl –parse_seqids 
- > -db /biocontainers/db/myminidb -query /biocontainers/fastafiles/query.fa -out res.out 
+ > --version    
+ > makeblastdb -in /biocontainers/fastafiles/in.fa –dbtype nucl –parse_seqids    
+ > -db /biocontainers/db/myminidb -query /biocontainers/fastafiles/query.fa -out res.out    
 
 As you can see there are three lines meaning there are three separate tests:
 1. First we check the tool is indeed installed.
