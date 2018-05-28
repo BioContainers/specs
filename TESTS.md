@@ -56,3 +56,18 @@ If each test was run with no error signal returned, then the post build testing 
 #### 3.2.2. A test ends in an error
 
 As soon as a test exits with an error code then the testing status will be set to _failure_ and a message will display the guilty line's content.
+
+## 4. Example test-cmds.txt
+
+The most common tests you'll want to run are to check if the tool is correctly installed and one or more simple test cases.
+Below is an example _test-cmds.txt_ file that could be used with Blast.
+
+**test-cmds.txt**
+> --version
+> makeblastdb -in /biocontainers/fastafiles/in.fa –dbtype nucl –parse_seqids
+> -db /biocontainers/db/myminidb -query /biocontainers/fastafiles/query.fa -out res.out
+
+As you can see there are three lines meaning there are three separate tests:
+1. First we check the tool is indeed installed.
+2. This command does NOT start with a "-" meaning we define a different entrypoint. Here we're calling the _makeblastdb_ command that comes with _Blast_ installs.
+3. Finally we run a test Blast command using data from the automatically mounted _/biocontainers/_ directory.
