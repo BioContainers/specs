@@ -1,19 +1,19 @@
 # Contributing
 
-This document briefly describes how to contribute to the [biodocker project](https://github.com/biodocker/biodocker).
+This document briefly describes how to contribute to the [BioContainers project](https://github.com/BioContainers/specs).
 
 ## Before you Begin
 
-If you have an idea for a feature/container to add or an approach for a bugfix, it is best to communicate with BioDocker developers early. The most
-common venues for this are [GitHub issues](https://github.com/BioDocker/biodocker/issues) for common specification issues and the
-[Containers and Tools](https://github.com/BioDocker/containers/issues) for container/docker realted issues.
+If you have an idea for a feature/container to add or an approach for a bugfix, it is best to communicate with BioContainers developers early. The most
+common venues for this are [GitHub issues](https://github.com/BioContainers/specs/issues) for common specification issues and the
+[Containers and Tools](https://github.com/BioContainers/containers/issues) for container/docker related issues.
 Browse through existing GitHub issues and if one seems related, comment on it. If no existing issue seems appropriate, a new issue can be
-opened using [this form](https://github.com/BioDocker/biodocker/issues/new). BioDocker developers are also generally available via biodockers@gmail.com or 
-[![Join the chat at https://gitter.im/BioDocker/biodocker](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioDocker/biodocker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+opened using [this form](https://github.com/BioContainers/BioContainers/issues/new). BioContainers developers are also generally available via BioContainerss@gmail.com or 
+[![Join the chat at https://gitter.im/BioContainers/BioContainers](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioContainers/BioContainers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## How to Contribute
 
-* All changes to the [specifications BioDocker project](https://github.com/BioDocker/bidocker)
+* All changes to the [specifications BioContainers project](https://github.com/BioContainers/bidocker)
   should be made through pull requests to this repository (with just two
   exceptions outlined below).
 
@@ -22,7 +22,7 @@ opened using [this form](https://github.com/BioDocker/biodocker/issues/new). Bio
 
 * Make sure you have a free [GitHub](https://github.com/) account.
 
-* Fork the [container repository](https://github.com/BioDocker/containers) on
+* Fork the [container repository](https://github.com/BioContainers/containers) on
   GitHub to make your changes. (While many Containers instances track active development
   happens in the containers GitHub repository and this is where pull requests
   should be made).
@@ -37,13 +37,13 @@ opened using [this form](https://github.com/BioDocker/biodocker/issues/new). Bio
 
   * Serious security problems should not be fixed via pull request - please
     responsibly disclose these by e-mailing them (with or without patches) to
-    biodcokers@gmail.com . The Biodocker core development team will
-    issue patches those isssues and We will provide you
-    credit for the discovery when publicly disclosing the issue.
+    biodockers@gmail.com . The BioContainers core development team will solve
+    those issues and we will provide you credit for the discovery when publicly
+    disclosing the issue.
 
 * If your changes modify containers/images - please ensure the resulting files
-  conform to BioDocker Specifications [Biodocker
-  Specifications](https://github.com/Biodocker/biodocker).
+  conform to BioContainers Specifications [BioContainers
+  Specifications](http://biocontainers.pro/docs/developer-manual/biocotainers-dockerfile/).
 
 * Commit and push your changes to your
   [fork](https://help.github.com/articles/pushing-to-a-remote/).
@@ -63,13 +63,13 @@ opened using [this form](https://github.com/BioDocker/biodocker/issues/new). Bio
 
 ## Ideas
 
-BioDocker's [BioDocker Specification and Design](http://github.com/BioDocker/biodocker/issues) is filled with comments and ideas
+BioContainers's [BioContainers Specification and Design](http://github.com/BioContainers/BioContainers/issues) is filled with comments and ideas
 for enhancements and we believe would make the best entry points for new developers.
 
 ## A Quick Note about Containers
 
-  For the most part, BioDocker containers should be published to the [BioDocker containers](https://github.com/BioDocker/biodocker) and not in this repository directly. 
-  If you are looking to supply new containers first check if an existing container exist in this repository [BioDocker containers](https://github.com/BioDocker/biodocker) -
+  For the most part, BioContainers containers should be published to the [BioContainers containers](https://github.com/BioContainers/BioContainers) and not in this repository directly. 
+  If you are looking to supply new containers first check if an existing container exists in this repository [BioContainers containers](https://github.com/BioContainers/BioContainers) -
   please checkout the repository on GitHub.
 
 ## Handling Pull Requests
@@ -156,7 +156,7 @@ invokes a mandatory, minimum 72 hour, review period.
 
 ### Direct Commit Access
 
-The BioDocker *committers* group may only commit directly to BioDocker (i.e.  outside
+The BioContainers *committers* group may only commit directly to BioContainers (i.e.  outside
 of a pull request and not following the procedures described here) the
 following two categories of patches:
 
