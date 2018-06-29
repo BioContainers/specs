@@ -9,8 +9,9 @@ We explain here the containers metadata, their meaning and use in BioContainers:
 | Field          | Description | Optional                                             | Example   |
 |----------------|------------ |------------------------------------------------------|-----------|
 | LABEL base_image            | The original image where the software has been built | **Mandatory** | base_image=" biodckr/biodocker" |
-| LABEL software.version      | Version of the software and tool                     | **Mandatory** | software.version="2015020"     |
-| LABEL software              | Name of the software                                 | **Mandatory** | software="Comet"               |
+| LABEL version               | Version of the tool's Dockerfile                     | **Mandatory** | version="2" |
+| LABEL software.version      | Version of the software or tool                      | **Mandatory** | software.version="2015020"     |
+| LABEL software              | Name of the software or tool                         | **Mandatory** | software="Comet"               |
 | LABEL about.summary         | A short description of the software or tool.         | **Mandatory** | about.summary="Peptide" identification|
 | LABEL about.home            | The original software website.                       | **Mandatory** | about.home="http://comet-ms.sourceforge.net/"  |
 | LABEL about.documentation   | URL(s) containing information about software         | _Optional_  | about.documentation="http://comet-ms.sourceforge.net/"     |
