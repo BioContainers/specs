@@ -39,7 +39,7 @@ LABEL about.documentation="http://comet-ms.sourceforge.net/parameters/parameters
 LABEL about.license="SPDX:Apache-2.0"
 LABEL about.license_file="/usr/share/common-licenses/Apache-2.0"
 LABEL about.tags="Proteomics"
-LABEL extra.identifiers.biotools=comet
+LABEL extra.identifier.biotools=comet
 
 # Maintainer
 MAINTAINER Felipe da Veiga Leprevost <felipe@leprevost.com.br>
@@ -79,7 +79,7 @@ LABEL base_image="biocontainers:latest" \
       about.license="SPDX:Apache-2.0" \
       about.license_file="/usr/share/common-licenses/Apache-2.0" \
       about.tags="Proteomics" \
-      extra.identifiers.biotools=comet
+      extra.identifier.biotools=comet
 
 # Maintainer
 MAINTAINER Felipe da Veiga Leprevost <felipe@leprevost.com.br>
