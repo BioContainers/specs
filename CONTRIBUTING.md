@@ -9,7 +9,7 @@ common venues for this are [GitHub issues](https://github.com/BioContainers/spec
 [Containers and Tools](https://github.com/BioContainers/containers/issues) for container/docker related issues.
 Browse through existing GitHub issues and if one seems related, comment on it. If no existing issue seems appropriate, a new issue can be
 opened using [this form](https://github.com/BioContainers/BioContainers/issues/new). BioContainers developers are also generally available via BioContainerss@gmail.com or 
-[![Join the chat at https://gitter.im/BioContainers/BioContainers](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BioContainers/BioContainers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/biocontainers/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/biocontainers/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## How to Contribute
 
