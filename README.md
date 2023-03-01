@@ -41,7 +41,8 @@ Contents
   2.3. [How to use a BioContainer](#23-how-to-use-a-biocontainer)   
   2.4. [BioContainers Architecture](#24-biocontainers-architecture)  
   2.4.1 [How to Request a Container](#241-how-to-request-a-container)  
-  2.4.2 [Use a Container](#242-use-a-bioContainer.)      
+  2.4.2 [Add a container](#242-add-a-container)  
+  2.4.3 [Use a Container](#243-use-a-bioContainer.)      
 3. [Developing containers](#3-developing-containers)  
   3.1. [How to build BioContainers](#31-how-to-build-biocontainers)    
   3.2. [What do I need to develop?](#32-what-do-i-need-to-develop)    
@@ -139,7 +140,7 @@ Test the container recipe where your Dockerfile is:
 
 If ok, commit and push your changes to your fork and ask for a pull request to our repository.
 
-#### 2.4.3 Use a BioContainer. 
+#### 2.4.3 Use a BioContainer
 
 When a container is deployed and the developer closes the issue in GitHub, the user `(henrik)` receives a notification that the container is ready.
 The user can then use [docker](http://www.docker.com) or [rkt](https://coreos.com/rkt/docs/latest/) to pull or fetch the corresponding container. 
