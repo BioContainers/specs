@@ -119,8 +119,27 @@ The next sections explain in details the presented workflow:
  
 Users can request a container by opening an issue in the [containers
 repository] (http://github.com/BioContainers/containers/issues) `(In the previous workflow this is the first step performed by user henrik)`. The issue should contain the name of the software, the url of the code or binary to be package and information about the software [see BioContainers specification](https://github.com/BioContainers/specs/blob/master/container-specs.md). When the container is deployed and fully functional, the issue will be closed by the developer or the contributor to BioContainers. 
-  
-#### 2.4.2 Use a BioContainer. 
+
+#### 2.4.2 Add a container
+
+Fork the repository and add a container. To add a container:
+
+* create directory name_of_software/version_of_upstream_software
+* in directory add a Dockerfile [following BioContainers specification](https://github.com/BioContainers/specs/blob/master/container-specs.md)
+* optionally (but recommended) add a test-cmds.txt file to test automatically the container (list of one-line bash commands
+
+Example test-cmds.txt
+
+    mytool -v
+    mytool -h
+
+Test the container recipe where your Dockerfile is:
+
+    docker build .
+
+If ok, commit and push your changes to your fork and ask for a pull request to our repository.
+
+#### 2.4.3 Use a BioContainer. 
 
 When a container is deployed and the developer closes the issue in GitHub, the user `(henrik)` receives a notification that the container is ready.
 The user can then use [docker](http://www.docker.com) or [rkt](https://coreos.com/rkt/docs/latest/) to pull or fetch the corresponding container. 
